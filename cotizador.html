@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotización de Seguros</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a class="header" href="./index.html"><h1>Cotización de Seguros</h1></a>
+    </header>
+    <main>
+      <form id="cotizacion-form">
+        <label for="tipo-seguro">Tipo de Seguro:</label>
+        <select id="tipo-seguro" name="tipo-seguro">
+          <option value="hogar">Seguro de Hogar</option>
+          <option value="comercio">Seguro de Comercio</option>
+        </select>
+        <label for="valor-propiedad">Valor de la Propiedad:</label>
+        <input
+          type="number"
+          id="valor-propiedad"
+          name="valor-propiedad"
+          required
+        />
+        <button type="submit">Calcular Cotización</button>
+      </form>
+      <div id="resultado"></div>
+    </main>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
